@@ -108,6 +108,12 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
+            <Link
+              href="/dashboard"
+              className="px-6 py-2.5 border border-gray-700 text-white text-sm font-bold tracking-wide rounded-full hover:bg-white hover:text-[#0B0B0D] transition-all duration-300"
+            >
+              PAINEL
+            </Link>
             <a
               href="https://adeb.com.br"
               target="_blank"
@@ -216,7 +222,14 @@ export default function Header() {
             </nav>
 
             {/* Mobile CTA */}
-            <div className="mt-8 pt-8 border-t border-gray-800">
+            <div className="mt-8 pt-8 border-t border-gray-800 space-y-3">
+              <Link
+                href="/dashboard"
+                className="block w-full py-4 border border-gray-700 text-white text-center font-bold rounded-full hover:bg-white hover:text-[#0B0B0D] transition-all duration-300"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Painel
+              </Link>
               <a
                 href="https://adeb.com.br"
                 target="_blank"
